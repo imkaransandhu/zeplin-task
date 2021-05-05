@@ -1,0 +1,269 @@
+body {
+    font-family: Quicksand;
+}
+
+
+/* Banner Section CSS */
+.banner {
+    background-image: linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.5) 65%),url(./main-banner.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: 48%;
+    height: 430px;
+    padding: 0;
+}
+
+.banner-text {
+    color: #fff;
+    padding: 50px 80px 0px 15px;
+}
+
+.banner-heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.banner-sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #de6c17;
+    color: #fff;
+    border: none;
+    height: 48px;
+    padding: 0 30px;
+    margin-top: 5px;
+}
+
+.banner-bottom-image {
+    width: 100%;
+    zoom: 1.5;
+    background-position: 40%;
+    background-image: url(./banner-wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45%;
+    height: 40px;
+    position: absolute;
+    zoom: 1.5;
+    bottom: 0;
+
+}
+
+/* Our Services Section CSS */
+.our-services {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.our-services-heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #36413c;
+}
+
+.our-services-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5e6e66;
+}
+
+ /* Card Section CSS */
+ .card-row {
+    display: flex;
+    padding: 50px 50px;
+    justify-content: space-between;
+}
+
+.custom-card {
+    box-shadow: 0 0 2px 0.5px rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.custom-card-image {
+   width: 100%;
+   height: 250px;
+   border-top-right-radius: 8px;
+   border-top-left-radius: 8px;
+}
+
+.custom-card-bottom {
+   padding: 15px 20px 0;
+}
+
+.custom-card-heading {
+   font-size: 24px;
+   font-weight: 700;
+   color: #36413C;
+}
+
+.custom-card-text {
+   font-size: 16px;
+   font-weight: 500;
+   color: #5e6e66;
+}
+
+.custom-card-button {
+   border: none;
+   background-color: #fff;
+   font-size: 18px;
+   font-weight: 700;
+   color: #de6c17;
+   padding-left: 0;
+}
+
+.arrow {
+   border: solid #de6c17;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+
+ }
+ 
+ .right {
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+ }
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    /* Banner Sectoin CSS */
+    .banner-text {
+        padding: 60px 230px 0px 40px;
+    }
+
+    /* Card Section */
+    .custom-card {
+        flex-direction: row;
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    .custom-card-image {
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+        width: 50%;
+    }
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    /* Banner Section CSS */
+    .banner-text {
+        padding: 60px 390px 0px 60px;
+    }
+
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    /* Banner Section CSS */
+    .banner {
+        height: 500px;
+        zoom: 1;
+    }
+    .banner-text {
+        padding: 100px 440px 0px 90px;
+    }
+    .banner-heading {
+        font-size: 45px;
+        margin: 15px 0;
+    }
+    .banner-sub-heading {
+        font-size: 24px;
+    }
+
+    /* Our Services Section CSS */
+    .our-services {
+        padding: 40px 120px;
+    }
+
+
+    .our-services-heading {
+        font-size: 45px;
+        font-weight: 700;
+        color: #36413c;
+    }
+    
+    .our-services-text {
+        font-size: 24px;
+        font-weight: 500;
+        color: #5e6e66;
+    }
+
+    /* Card Section CSS */
+    .row-card {
+        padding: 0 60px;
+    }
+
+    .custom-card-image {
+        width: 50%;
+    }
+
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    /* Banner Section CSS */
+    .banner-text {
+        padding: 140px 670px 0px 180px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    /* Our Services Section CSS */
+    .our-services {
+        padding: 40px 200px;
+    }
+
+    .our-services-text {
+        padding: 0 120px;
+    }
+
+    /* Card Section */
+    .row-card {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+
+    .custom-card {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        margin: 0 0 10px;
+        width: 30%;
+        padding-bottom: 20px;
+    }
+
+    .custom-card-image {
+        width: auto;
+    }
+
+
+    .custom-card-image {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+}
